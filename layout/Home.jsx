@@ -1,12 +1,24 @@
-import Hero from "../components/Hero";
-
 import React from "react";
+import Hero from "../components/Hero";
+import { motion } from "framer-motion";
+
+const variantsTransition = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 },
+  exit: { opacity: 0 },
+};
 
 const Home = () => {
   return (
-    <div className="home">
+    <motion.div
+      variants={variantsTransition}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+      className="home"
+    >
       <Hero />
-    </div>
+    </motion.div>
   );
 };
 

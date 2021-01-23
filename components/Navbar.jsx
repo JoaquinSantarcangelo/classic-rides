@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Navbar = ({ setMenuOpen, menuOpen }) => {
   return (
     <div className="navbar">

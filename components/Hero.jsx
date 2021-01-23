@@ -1,4 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
+//Icons
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import PhoneIcon from "@material-ui/icons/Phone";
@@ -14,7 +17,9 @@ const Hero = () => {
           ex iste nisi, laudantium voluptates! Ad quae culpa aperiam
           voluptatibus!
         </div>
-        <div className="button">Ver catálogo</div>
+        <Link to="/catalogo" className="link">
+          <div className="button">Ver catálogo</div>
+        </Link>
       </div>
       <div className="contact-icons">
         <div className="container">
