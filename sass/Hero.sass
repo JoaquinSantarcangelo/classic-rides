@@ -1,0 +1,73 @@
+@import index
+
+.hero
+    width: 100%
+    height: 100%
+    background-color: $dark
+    display: flex
+    align-items: center
+    justify-content: center
+    //Texts & Button Wrapper
+    .wrapper
+        display: flex
+        flex-direction: column
+        color: $cream
+        z-index: 10
+        margin-top: -5em
+        .title
+            font-size: 11vw
+            font-weight: 900
+        .subtitle
+            font-size: 1.4em
+            width: 75%
+            line-height: 1.4em
+        .button
+            margin-top: 2em
+            background-color: $cream
+            border: 2px solid $cream
+            width: fit-content
+            color: $dark
+            padding: 0.5em 4em
+            font-size: 1.4em
+            border-radius: 0.2em
+            transition: all 0.4s ease
+            &:hover
+                transform: scale(1.1)
+                cursor: pointer
+                background-color: transparent
+                backdrop-filter: blur(5px)
+                color: $cream
+
+    //Contact Icons
+    .contact-icons
+        position: absolute
+        display: flex
+        align-items: center
+        justify-content: center
+        color: $cream
+        bottom: 2em
+        left: 0
+        z-index: 101
+        width: 100%
+        .MuiSvgIcon-root
+            font-size: 2em
+            margin-right: 0.2em
+            transition: all 0.4s ease
+            &:hover
+                transform: scale(1.1)
+                cursor: pointer
+    //Background
+    .background
+        width: 100%
+        height: 100%
+        position: absolute
+        background-image: url("https://images.unsplash.com/photo-1508171997656-fdf7cf6c4df9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80")
+        background-size: cover
+        background-position: bottom
+        z-index: 1
+        &::before
+            content: ""
+            width: 100%
+            height: 100%
+            position: absolute
+            background-color: rgba(0,0,0,0.66)

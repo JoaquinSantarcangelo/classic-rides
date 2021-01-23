@@ -1,0 +1,29 @@
+@import index
+
+.navbar
+    margin-top: 2em
+    position: absolute
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    .container
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .logo
+        .menu-icon
+            z-index: 101
+            transition: all 0.4s ease
+            .line
+                border-radius: 1em
+                width: 3.5em
+                margin-bottom: 0.25em
+                height: 0.5em
+                border: 0.5px solid $cream
+                transition: all 0.4s ease
+            &:hover
+                transform: scale(1.1)
+                cursor: pointer
+                .line
+                    background-color: $cream
